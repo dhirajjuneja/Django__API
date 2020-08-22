@@ -18,3 +18,8 @@ then you have to open terminal and run python manage.py shell
 then run these two commands on opening the shell
 from polls.models import Question, Choice
 from django.utils import timezone
+
+V.IMPORTANT***HOW TO ADD CHOICES***
+** q = Question.objects.get(pk=(/question.id/))
+** q.choice_set.all()
+** q.choice_set.create(choice_text='/Your Choice/', votes=0) 
